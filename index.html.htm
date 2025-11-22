@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niranjana R Vipin | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b") no-repeat center center/cover;
+      color: #fff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .top-btn {
+      padding: 10px 18px;
+      background: #ff4d6d;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      padding: 10px 18px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      backdrop-filter: blur(4px);
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    header button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      background: #ff4d6d;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 10%;
+      background: rgba(0,0,0,0.35);
+      margin: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffdde1;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+
+    .skill-box {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      line-height: 1.5;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffb3c6;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    a { color: #add8ff; }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#top" class="top-btn">Top ↑</a>
+  </nav>
+
+  <header id="top">
+    <h1>Hi, I'm</h1>
+    <h1><strong>NIRANJANA R VIPIN</strong></h1>
+    <p>BCA Graduate | Data Scientist</p>
+    <button onclick="scrollToSec('about')">Explore</button>
+  </header>
+
+
+  <section id="about" style="scroll-margin-top:120px;">
+    <h2>About Me</h2>
+    <p style="max-width:700px;font-size:1.1rem;line-height:1.7;">
+      I am Niranjana R Vipin, a BCA graduate and currently doing my PG 
+Diploma in Artificial Intelligence.
+My interests lie in AI, machine learning, data analytics, and Python 
+development. I have worked on projects like Nino Care, an innovative 
+application that digitizes mother and child healthcare services and 
+integrates blockchain for transparency.
+I am now looking for opportunities to apply my skills in real-world 
+projects and grow in the fields of AI and data-driven development.
+    </p>
+  </section>
+
+
+  <section id="education" style="scroll-margin-top:120px;">
+    <h2>Education</h2>
+    <ul style="font-size:1.1rem;line-height:1.8;list-style:circle;margin-left:20px;">
+      <li><strong>Bachelor of Computer Applications (BCA)</strong><br>Kannur University (2022–2025)</li>
+      <li><strong>PG Diploma in Artificial Intelligence</strong><br>Edure Learning (Pursuing)</li>
+    </ul>
+  </section>
+
+
+  <section id="skills" style="padding:40px; scroll-margin-top:120px;">
+      <h2 style="font-size:28px; margin-bottom:20px; color:#ffdde1;">Technical Skills</h2>
+
+      <h3 style="margin-top:20px; color:#fcf5f5;">Programming Languages</h3>
+      <ul style="margin-left:20px; line-height:1.6;">
+        <li>Python</li>
+        <li>C++</li>
+        <li>C</li>
+      </ul>
+
+      <h3 style="margin-top:20px; color:#fcf5f5;">Machine Learning</h3>
+      <ul style="margin-left:20px; line-height:1.6;">
+        <li>Supervised &amp; Unsupervised Learning</li>
+        <li>Regression &amp; Classification</li>
+        <li>Model Training &amp; Evaluation</li>
+        <li>Data Preprocessing</li>
+      </ul>
+
+      <h3 style="margin-top:20px; color:#fcf5f5;">Operating Systems</h3>
+      <ul style="margin-left:20px; line-height:1.6;">
+        <li>Windows</li>
+        <li>Linux</li>
+      </ul>
+
+      <h3 style="margin-top:20px; color:#fcf5f5;">Libraries</h3>
+      <ul style="margin-left:20px; line-height:1.6;">
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Tkinter</li>
+        <li>Seaborn</li>
+        <li>Scikit-Learn</li>
+      </ul>
+    </section>
+
+
+  <section id="projects" style="scroll-margin-top:120px;">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <div class="project-title">Nino Care – Digital Mother &amp; Child Care App</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/ninologo.png" class="project-img">
+        Nino Care is a digital healthcare management application 
+designed to modernize and automate mother and child care services in 
+Kerala. The system replaces traditional handwritten records used at the 
+Panchayat level with a smart, centralized digital platform.
+        <br><br>
+        It includes four user roles—Admin, Asha Workers, 
+Mothers/Pregnant Women, and Anganwadi staff—each with specific features 
+such as vaccination tracking, food distribution monitoring, census 
+updates, and scheme management.
+        The project also integrates blockchain technology to ensure 
+transparency in Anganwadi food supply distribution, preventing fraud and
+ improving accountability.
+      </div>
+
+      <div class="card">
+        <div class="project-title">Titanic Survival Prediction – Machine Learning</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/photo-1555949963-aa79dcee981c.jpeg" class="project-img">
+        Developed a machine learning model to predict passenger survival
+ on the Titanic using the Kaggle “Titanic: Machine Learning from 
+Disaster” dataset. The project involved end-to-end data processing, 
+feature engineering, model building, and performance evaluation.
+        <br><br>
+        Key Steps &amp; Features:
+        <br><br>
+        • Cleaned and preprocessed data (handled missing values, encoded categorical features, normalized numerical data)
+        <br>
+        • Performed Exploratory Data Analysis (EDA) to understand survival patterns
+        <br>
+        • Applied models like Logistic Regression, Random Forest, Decision Trees
+        <br>
+        • Hyperparameter tuning for improved accuracy
+        <br>
+        • Evaluated accuracy, confusion matrix, and classification report
+        <br>
+        Tools: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+         <a href="https://github.com/niranjanarvipin/TITANIC-SURVIVAL" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">911 Call Analysis</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/photo-1521791136064-7986c2920216.jpeg" class="project-img">
+        Conducted an in-depth analysis of 911 emergency call data to 
+uncover patterns in call volume, types of emergencies, and geographic 
+distribution. The project focused on understanding public safety trends.
+        <br><br>
+        Key Insights:
+        <br><br>
+        • Extracted time, date, and call reason
+        <br>
+        • Analyzed call frequency by hour, day, month, year
+        <br>
+        • Categorized EMS, Fire, and Traffic calls
+        <br>
+        • Visualized hotspots and trends using Matplotlib/Seaborn
+        <br>
+        Tools: Python, Pandas, NumPy, Matplotlib, Seaborn
+        <a href="https://github.com/niranjanarvipin/911-CALL-ANALYSIS" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">E-commerce Purchase Analysis</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/photo.png" class="project-img">
+        Performed a detailed analysis of e-commerce purchase data to 
+identify customer trends, buying patterns, and business insights.
+        <br><br>
+        Key Points:
+        <br><br>
+        • Data cleaning and preprocessing
+        <br>
+        • Understanding demographics and buying behavior
+        <br>
+        • Identifying top-selling products and peak timings
+        <br>
+        • Visualizing major metrics
+        <br>
+        Tools: Python, Pandas, NumPy, Matplotlib
+        <br><br>
+        <a href="https://github.com/niranjanarvipin/ECOMMERCE-PURCHASE-ANALYSIS" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Calculator – Python Tkinter</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/cal.png" class="project-img">
+        Developed a calculator app capable of performing arithmetic operations with a simple and efficient GUI.
+        <br><br>
+        Features:
+        <br>
+        • Basic operations
+        <br>
+        • Clean interface
+        <br>
+        • Error handling for invalid inputs
+        <br>
+        Tools: Python, Tkinter
+             <a href="https://github.com/niranjanarvipin/CALCULATOR" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Quiz Maker – GUI Application</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/quiz.png" class="project-img">
+        Developed an interactive GUI-based quiz application with multiple-choice questions and score display.
+        <br><br>
+        Tools: Python, Tkinter
+             <a href="https://github.com/niranjanarvipin/QUIZ-MAKER" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Tic-Tac-Toe – User vs Computer</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/tic.png" class="project-img">
+        Created a Python-based Tic Tac Toe game where the user plays against the computer.
+        <br><br>
+        Features:
+        <br>
+        • Intelligent computer moves
+        <br>
+        • Winner &amp; draw detection
+        <br>
+        • Input validation
+        <br>
+        Tools: Python
+             <a href="https://github.com/niranjanarvipin/TIC-TAC-TOE" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Notepad – Python Tkinter</div>
+        <img src="Niranjana%20R%20Vipin%20_%20Portfolio%20NEWW_files/photo-1508830524289-0adcbe822b40.jpeg" class="project-img">
+        Built a lightweight Notepad application with file create, edit, and save features.
+        <br><br>
+        Tools: Python, Tkinter
+        <a href="https://github.com/niranjanarvipin/NOTEPAD" target="_blank">🔗 View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact" style="scroll-margin-top:120px;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rvipinniranjana@gmail.com">rvipinniranjana@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/niranjana-r-vipin-sep30" target="_blank">niranjana-r-vipin-sep30</a></p>
+  </section>
+
+
+  <script>
+    function scrollToSec(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+
+
+
+
+
+</body></html>
